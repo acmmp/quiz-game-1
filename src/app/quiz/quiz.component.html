@@ -1,0 +1,16 @@
+<div *ngIf="questions.length > 0 && !quizService.isQuizOver(); else showResult">
+    <app-question 
+        [question]="quizService.getCurrentQuestion()" 
+        (answerSelected)="onAnswerSelected($event)">
+    </app-question>
+</div>
+
+<ng-template #showResult>
+    <app-result 
+        [score]="quizService.getScore()" 
+        (restart)="startNewRound()">
+    </app-result>
+</ng-template>
+
+
+

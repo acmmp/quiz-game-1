@@ -30,6 +30,7 @@ export class QuizService {
   }
 
   resetQuiz() {
+    this.shuffleQuestions(); // Desordenar preguntas al reiniciar
     this.currentQuestionIndex = 0;
     this.score = 0;
   }
@@ -53,5 +54,13 @@ export class QuizService {
       },
       // ... más preguntas
     ];
+  }
+
+  // Función para desordenar las preguntas
+  shuffleQuestions() {
+    for (let i = this.questions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [this.questions[i], this.questions[j]] = [this.questions[j], this.questions[i]];
+    }
   }
 }

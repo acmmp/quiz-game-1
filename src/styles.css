@@ -4,8 +4,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #1a1a2e;
-  color: #ffffff;
+  background-color: #1a1a2e; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
   margin: 0;
   padding: 0;
 }
@@ -14,36 +14,43 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  border: 2px solid #4ecca3; /* Borde verde */
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Sombra más intensa */
+  background: linear-gradient(145deg, #1a1a2e, #0f0f1a); /* Fondo con degradado */
 }
 
 h2 {
-  font-size: 32px;
-  color: #4ecca3;
+  font-size: 36px; /* Tamaño de fuente aumentado */
+  color: #4ecca3; /* Color del título */
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px; /* Espaciado aumentado */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto más pronunciada */
 }
 
 button {
-  background-color: #4ecca3;
-  color: #1a1a2e;
+  background-color: #4ecca3; /* Color del botón */
+  color: #1a1a2e; /* Texto del botón */
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 14px 28px; /* Aumento de padding */
+  font-size: 18px; /* Tamaño de fuente aumentado */
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
+  transition: all 0.4s ease; /* Transición más suave */
+  font-weight: 700; /* Peso de fuente aumentado */
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px; /* Espaciado aumentado */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra del botón más intensa */
 }
 
 button:hover {
-  background-color: #45b7a0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(78, 204, 163, 0.3);
+  background-color: #45b7a0; /* Color al pasar el ratón */
+  transform: translateY(-4px); /* Aumento del efecto de desplazamiento */
+  box-shadow: 0 6px 20px rgba(78, 204, 163, 0.6); /* Sombra más intensa al pasar el ratón */
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url('/assets/fonts/Poppins-Regular.woff2') format('woff2'),
@@ -53,9 +60,11 @@ button:hover {
 }
 
 .question-text {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 5px;
+  color: #ffffff; /* Texto blanco */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
+  padding: 12px; /* Aumento de padding */
+  border-radius: 8px; /* Bordes más redondeados */
   font-weight: bold;
+  border: 1px solid #4ecca3; /* Borde verde */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
 }
